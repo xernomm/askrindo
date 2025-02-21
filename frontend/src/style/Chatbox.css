@@ -1,0 +1,76 @@
+.vankaImg
+{
+    height: 250px;
+    margin: auto;
+}
+.user-message {
+    background-color: #ff000054; /* Light blue background for user messages */
+    padding: 10px;
+    border-radius: 25px 25px 0 25px;
+    margin: 5px 0;
+    color: white;
+    /* Remove width and height properties to allow natural sizing */
+    border: solid rgba(255, 255, 255, 0.355) 1px;
+    display: inline-block; /* Allow the box to size based on content */
+    max-width: 80%; /* Optional: limit the maximum width */
+}
+
+.bot-message {
+    background-color: #adadad4a; /* Light gray background for bot messages */
+    padding: 10px;
+    border-radius: 25px 25px 25px 0;
+    margin: 5px 0;
+    color: white;
+    /* Remove width and height properties to allow natural sizing */
+    display: inline-block; /* Allow the box to size based on content */
+    max-width: 80%; /* Optional: limit the maximum width */
+}
+
+.noChatField
+{
+    display: flex;
+    justify-content: center !important;
+    width: 65% !important;
+}
+
+.promptBox
+{
+    border: 1px solid rgba(255, 255, 255, 0.494);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 20%;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+    .noChatField
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    .promptBox
+    {
+        border: 1px solid rgba(255, 255, 255, 0.494);
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-bottom: 5px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 80%;
+    }
+    .vankaImg
+    {
+        height: 170px;
+        margin: auto;
+    }
+}
